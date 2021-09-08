@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, tahoma, sans-serif;
+}
+.container {
+  width: 68%;
+  height: 430px;
+  background-color: #20bfa9;
+  margin: 150px auto;
+  border: 1px solid #000;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.product {
+  background-color: #fff;
+  width: 39%;
+  border-radius: 10px;
+  position: relative;
+}
+.product > h2 {
+  background-color: #282828;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0 50px;
+  border-radius: 10px 10px 0 0;
+}
+.product h2 span {
+  color: #080;
+}
+.product .child {
+  position: absolute;
+  background-color: #fff;
+  top: 65px;
+  box-shadow: 1px 3px 5px 0 #cecece, -1px 0px 5px 0 #cecece;
+  border-radius: 10px;
+  width: 82%;
+  left: 9%;
+  text-align: center;
+}
+.product .child h2 {
+  margin: 25px 0;
+  font-size: 20px;
+}
+.product .child ul {
+  width: 84%;
+  margin: auto;
+  display: block;
+  text-align: left;
+}
+.product .child ul li {
+  margin: 5px 40px;
+  font-size: 35px;
+  color: #f73859;
+  line-height: 20px;
+}
+.product .child ul li span {
+  font-size: 17px;
+  color: #000;
+}
+.product .child button {
+  all: unset;
+  background-color: #f73859;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px 0 20px;
+  cursor: pointer;
+}
+#product-one::before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #fff;
+  left: 127%;
+  height: 100%;
+}
+#product-one::after {
+  content: "OR";
+  position: absolute;
+  border-left: 1px solid #fff;
+  left: calc(127% - 25px);
+  height: 50px;
+  width: 50px;
+  color: #20bfa9;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  top: 50%;
+  margin-top: -25px;
+}
